@@ -1,0 +1,32 @@
+% Section: Hands On
+% Latex file for the MPI Course at HPC2N Umea 
+%    Elaborated by P. Ojeda
+%
+
+%########################  NEW SECTION  ########################
+\section{Hands-on}
+
+
+
+%%%%%%%%%%%%%%%%% NEW  SLIDE
+\begin{frame}
+	\frametitle{Simple hands-on}
+  
+	\begin{enumerate}
+		\item	Log in to Abisko.
+		\item	Go to the parallel file system.
+		\item	Copy executable (threaded program)and submit file:\\
+				\texttt{cp \~{}mr/Public/mandel .}\\
+				\texttt{cp \~{}mr/Public/submit .}
+		\item	Put the submit file into the batch queue.
+		\item	Look at the queue.
+		\item	Where did the output from the program go?
+		\item	Run on 12 cores instead.
+				Does it run twice as fast?
+		\item	The program creates a picture on a file (\texttt{mandel.ppm})
+				as output.
+				Try looking at it (e.g. using the command \texttt{display}).
+	\end{enumerate}
+
+\end{frame}
+

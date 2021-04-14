@@ -1,0 +1,99 @@
+% Latex file for the MPI Course at HPC2N Umea 
+%    Elaborated by P. Ojeda
+%
+\documentclass{beamer}
+%\documentclass[12pt]{article}
+%\usepackage{beamerarticle}
+\setbeamertemplate{navigation symbols}{}
+
+
+\usetheme{Warsaw}
+\usepackage{xcolor}
+%\usepackage{chemmacros}
+\usepackage{textpos}
+%\usepackage{verbatim}
+\usepackage{fancyvrb}
+\DefineVerbatimEnvironment{ColorVerbatim}{Verbatim}%
+  {formatcom=\color{purple},commandchars=\\\{\}}
+
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+\usepackage{listings}
+%\usepackage{alltt}
+
+\lstset{language=C,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  commentstyle=\color{teal}\ttfamily,
+  morecomment=[l][\color{magenta}]{\#}
+}
+
+
+\newcommand{\hilite}[1]{\colorbox{yellow}{#1}}
+
+\setbeamercovered{invisible}
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+\begin{document}
+% logo of my university
+%\titlegraphic{\vspace*{-5cm} \hspace*{8.75cm} \includegraphics[width=1.5cm]{umea_logo.eps}
+%}
+%\logo{\includegraphics[width=1.5cm]{umea_logo.eps}
+%}
+
+\title{ Introductory Course to Linux} \author{Pedro Ojeda-May, Birgitte Bryds\"{o}, and Jerry Eriksson
+} \institute[Ume\aa University]{
+  HPC2N, \\
+  Ume\aa University,\\[1em]\includegraphics[width=0.8cm]{images/umea_logo.eps} \\
+  901 87, Sweden.
+  }
+
+%\date{September 17, 2018}
+\date{}
+
+% position the logo
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(\textwidth,-1.6cm)
+\includegraphics[height=1cm,width=1cm,keepaspectratio]{images/logo_hpc2n.eps}
+\end{textblock*}}
+
+%%%%%%%%%%%%%%%%% NEW  SLIDE
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%% NEW  SLIDE
+\begin{frame}
+	\frametitle{Table of contents}
+
+	\tableofcontents
+\end{frame}
+
+
+
+%########################  NEW SECTION  ########################
+%\include{Why}
+
+
+%########################  NEW SECTION  ########################
+%\include{HowToApply}
+
+
+%########################  NEW SECTION  ########################
+%\include{Support}
+
+
+%########################  NEW SECTION  ########################
+\include{Linux}
+
+%########################  NEW SECTION  ########################
+%\include{UsingKebne}
+
+
+%########################  NEW SECTION  ########################
+%\include{HandsOn}
+
+
+
+\end{document}

@@ -1,0 +1,14 @@
+total 764K
+drwxrwxr-x 3 pedro pedro 4,0K feb 21 09:39 folder0
+drwxrwxr-x 2 pedro pedro 4,0K feb 21 09:42 folder1
+-rw-rw-r-- 1 pedro pedro    0 feb 21 09:45 file2
+-rw-rw-r-- 1 pedro pedro    0 feb 21 09:49 file_run1_02.dat
+-rw-rw-r-- 1 pedro pedro    0 feb 21 09:49 file_run2_02.dat
+-rw-rw-r-- 1 pedro pedro    0 feb 21 09:49 file_run3_02.dat
+drwx------ 7 pedro pedro 4,0K feb 21 09:51 ..
+-rwxr-xr-x 1 pedro pedro 727K feb 21 10:07 a.out
+-rw-rw-r-- 1 pedro pedro   71 feb 21 10:15 file1.text
+-rw-rw-r-- 1 pedro pedro  10K feb 21 10:18 folder0.tar
+-rwxrw-r-- 1 pedro pedro   62 feb 21 10:34 script.sh
+-rw-rw-r-- 1 pedro pedro    0 feb 21 10:35 out.dat
+drwxrwxr-x 4 pedro pedro 4,0K feb 21 10:35 .

@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH -A Project-ID
+#SBATCH -J G2016-gpu
+#SBATCH -t 01:00:00
+#SBATCH --ntasks-per-node=4
+#SBATCH -n 12
+#SBATCH -c 7
+#SBATCH --gres=gpu:k80:2
+#SBATCH -p batch
+
+module add GCC/5.4.0-2.26  CUDA/8.0.44  OpenMPI/2.0.1
+module add GROMACS/2016-hybrid
+
+if [ -n "$SLURM_CPUS_PER_TASK" ]; then
+    mdargs="-ntomp $SLURM_CPUS_PER_TASK"
+else
+    mdargs="-ntomp 1"
+fi
+
+export MDRUN='gmx_mpi mdrun'
+mpirun -np $SLURM_NTASKS gmx_mpi mdrun $mdargs -dlb yes  -v -deffnm npt
+
